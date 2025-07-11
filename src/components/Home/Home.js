@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-img.png";
 import Particle from "../Particle";
-import Home2 from "./Home2";
 import Type from "./Type";
 import Education from "../Education/Education";
 import Experience from "../Experience/Experience";
@@ -75,7 +74,6 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      {/* <Home2 /> */}
     </section>
   );
 }

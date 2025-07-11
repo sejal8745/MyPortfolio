@@ -5,7 +5,6 @@ import {
   Container,
   Button,
 } from "react-bootstrap";
-import logo from "../Assets/logo.png";
 
 import {
   AiOutlineBook,
