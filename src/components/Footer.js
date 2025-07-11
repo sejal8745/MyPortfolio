@@ -9,7 +9,7 @@ import {
   AiOutlineCopy,
   AiOutlineCheck,
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaBolt, FaChessKnight, FaCode, FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
   const year = new Date().getFullYear();
@@ -52,6 +52,24 @@ function Footer() {
       icon: <FaLinkedinIn />,
       url: "https://www.linkedin.com/in/sejal-goyal-437015194/",
       color: "#0077b5",
+    },
+    {
+      name: "Leetcode",
+      icon: <FaCode />,
+      url: "https://leetcode.com/sejal8745/",
+      color: "#fca121", // Leetcode orange
+    },
+    {
+      name: "Codechef",
+      icon: <FaChessKnight />,
+      url: "https://www.codechef.com/users/saira23",
+      color: "#5B4638", // CodeChef brown
+    },
+    {
+      name: "Codeforces",
+      icon: <FaBolt />,
+      url: "https://codeforces.com/profile/sejal23",
+      color: "#1F8ACB", // Codeforces blue
     },
   ];
 
