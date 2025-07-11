@@ -260,12 +260,12 @@ button:focus {
   background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
   background-position: top center;
   background-repeat: no-repeat;
-  padding-bottom: 30px !important;
-  padding-top: 30px !important;
+  padding-bottom: 10px !important;
+  /* padding-top: 10px !important; */
 }
 
 .home-content {
-  padding: 9rem 0 2rem !important;
+  padding: 4rem 0 2rem !important;
   color: whitesmoke;
   text-align: left;
 }
@@ -446,7 +446,7 @@ button:focus {
 /* --------- */
 .project-section {
   position: relative !important;
-  padding-top: 150px !important;
+  padding-top: 60px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
 }
@@ -535,18 +535,28 @@ button:focus {
   color: white !important;
   font-size: 2.3em !important;
   font-weight: 500 !important;
-  padding-top: 10px !important;
+  /* padding-top: 10px !important; */
 }
 
+/* --------- */
+/* Experience */
+/* --------- */
+.experience-section {
+  position: relative !important;
+  padding-top: 60px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+  color: white !important;
+}
 /* --------- */
 /* About */
 /* --------- */
 
 .about-section {
   position: relative !important;
-  padding-top: 150px !important;
+  padding-top: 60px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  /* background-image: var(--section-background-color) !important; */
   color: white !important;
 }
 
@@ -740,4 +750,158 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+
+.education-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.education-box {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  /* backdrop-filter: blur(8px); */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+/* --------- */
+/* Achievements */
+/* --------- */
+
+/* Achievements Section Styles */
+.achievements-section {
+  background-image: linear-gradient(to bottom, #0c0513, #1a0b2e);
+  color: white;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.position-section {
+  position: relative !important;
+  padding-top: 60px !important;
+  padding-bottom: 30px !important;
+  color: white !important;
+}
+
+.achievements-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="%23cd5ff8" opacity="0.03"><polygon points="0,0 1000,100 1000,0"/></svg>');
+  pointer-events: none;
+}
+
+.achievement-card {
+  background: rgba(13, 5, 19, 0.7) !important;
+  border: 1px solid rgba(205, 95, 248, 0.3) !important;
+  border-radius: 15px !important;
+  transition: all 0.3s ease !important;
+  backdrop-filter: blur(15px) !important;
+  -webkit-backdrop-filter: blur(15px) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.achievement-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(205, 95, 248, 0.1),
+    transparent
+  );
+  transition: left 0.5s ease;
+  z-index: 1;
+}
+
+.achievement-card:hover::before {
+  left: 100%;
+}
+
+.achievement-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(205, 95, 248, 0.6) !important;
+  box-shadow: 0 8px 30px rgba(205, 95, 248, 0.25) !important;
+}
+
+.achievement-card .card-body {
+  position: relative;
+  z-index: 2;
+  padding: 1.5rem !important;
+}
+
+.achievement-icon-container {
+  display: flex;
+  justify-content: center;
+}
+
+.achievement-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.achievement-card:hover .achievement-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.achievement-text {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 1.1em !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
+  font-weight: 500 !important;
+  text-align: center !important;
+}
+
+.achievement-card:hover .achievement-text {
+  color: white !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .achievements-section {
+    padding-top: 100px;
+  }
+
+  .achievement-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .achievement-text {
+    font-size: 1em !important;
+  }
+
+  .achievement-card .card-body {
+    padding: 1.25rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .achievement-text {
+    font-size: 0.95em !important;
+  }
+
+  .achievement-card .card-body {
+    padding: 1rem !important;
+  }
 }
