@@ -3,9 +3,7 @@
 Welcome to my personal portfolio website built with **React.js** and **React-Bootstrap**!  
 This site highlights my experience, projects, skills, and achievements as a Software Developer.
 
-<!-- 🌐 Live Demo: [https://sejalgoyal.dev](https://sejalgoyal.dev)  -->
-<!-- replace with your live link if available -->
-
+ 🌐 Live Demo: [https://meetsejal.netlify.app/](https://meetsejal.netlify.app/)
 ---
 
 ## ✨ Features
