@@ -3,8 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-img.png";
 import Particle from "../Particle";
 import Type from "./Type";
-import Education from "../Education/Education";
-import Experience from "../Experience/Experience";
 
 function Home() {
   return (

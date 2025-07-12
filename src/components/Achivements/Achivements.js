@@ -5,7 +5,6 @@ import {
   FaCode,
   FaAward,
   FaMedal,
-  FaRocket,
   FaCog,
   FaUsers,
 } from "react-icons/fa";
